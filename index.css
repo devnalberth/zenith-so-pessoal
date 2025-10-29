@@ -2,6 +2,9 @@
    INDEX CSS - ZENITH SO PESSOAL
    ======================================== */
 
+/* Tailwind CSS v4 */
+@import "tailwindcss";
+
 /* Imports */
 @import './styles/glass.css';
 @import './styles/animations.css';
@@ -122,12 +125,14 @@ body.dark::before {
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
 .line-clamp-3 {
   display: -webkit-box;
+  line-clamp: 3;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
