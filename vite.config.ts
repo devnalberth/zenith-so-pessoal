@@ -4,8 +4,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
+    const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
+    
     return {
-      base: '/zenith---so-pessoal/', // Nome do repositório no GitHub
+      base: isGitHubPages ? '/zenith---so-pessoal/' : '/', // GitHub Pages vs Vercel
       server: {
         port: 3000,
         host: '0.0.0.0',
