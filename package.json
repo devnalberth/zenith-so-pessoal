@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vercel --prod",
+    "deploy:github": "npm run build",
+    "deploy:vercel": "vercel --prod",
     "deploy:preview": "vercel"
   },
   "dependencies": {

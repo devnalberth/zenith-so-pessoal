@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: './', // Para funcionar em GitHub Pages e outros
+      base: '/zenith---so-pessoal/', // Nome do repositório no GitHub
       server: {
         port: 3000,
         host: '0.0.0.0',
